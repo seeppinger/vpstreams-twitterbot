@@ -51,7 +51,7 @@ async function searchAndRewteet(query) {
         if(rawTweets.length > 0) {
             lastTweetId = rawTweets[0].id_str;
         }
-        console.log(new Date().toDateString + "\nFetched tweets: " + rawTweets.length)
+        console.log("Fetched tweets: " + rawTweets.length)
     }).catch(console.error);
 
     //Filter tweets to exclude retweets, replies and tweets from our user
