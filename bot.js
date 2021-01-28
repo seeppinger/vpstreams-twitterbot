@@ -51,6 +51,7 @@ async function searchAndRewteet(query) {
         if(rawTweets.length > 0) {
             lastTweetId = rawTweets[0].id_str;
         }
+        console.log(new Date().toDateString + "\nFetched tweets: " + rawTweets.length)
     }).catch(console.error);
 
     //Filter tweets to exclude retweets, replies and tweets from our user
@@ -60,6 +61,7 @@ async function searchAndRewteet(query) {
             filteredTweets.push(rawTweet);
         }
     });
+    console.log("Filtered tweets: " + filteredTweets.length)
 
     //Save tweet ids only by list members
     var tweetIds = [];
@@ -70,6 +72,7 @@ async function searchAndRewteet(query) {
             }
         });
     });
+    console.log("Filtered by list: " + tweetIds.length)
 
     //determine max number of retweets (rate limit)
     var maxRetweets
