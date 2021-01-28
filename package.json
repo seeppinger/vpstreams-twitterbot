@@ -1,0 +1,25 @@
+{
+  "name": "vpstreams-twitterbot",
+  "version": "1.0.0",
+  "description": "Retweet twitterbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeppinger/vpstreams-twitterbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seeppinger/vpstreams-twitterbot/issues"
+  },
+  "homepage": "https://github.com/seeppinger/vpstreams-twitterbot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twitter-lite": "^0.14.0"
+  },
+  "private": "true"
+}
